@@ -1,0 +1,27 @@
+Traceback (most recent call last):
+  File "manage.py", line 22, in <module>
+    execute_from_command_line(sys.argv)
+  File "/home/leo/Documents/django-tutorial/djangotutorial_venv/lib/python3.5/site-packages/django/core/management/__init__.py", line 367, in execute_from_command_line
+    utility.execute()
+  File "/home/leo/Documents/django-tutorial/djangotutorial_venv/lib/python3.5/site-packages/django/core/management/__init__.py", line 341, in execute
+    django.setup()
+  File "/home/leo/Documents/django-tutorial/djangotutorial_venv/lib/python3.5/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/leo/Documents/django-tutorial/djangotutorial_venv/lib/python3.5/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/home/leo/Documents/django-tutorial/djangotutorial_venv/lib/python3.5/site-packages/django/apps/config.py", line 199, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 661, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 767, in get_code
+  File "<frozen importlib._bootstrap_external>", line 727, in source_to_code
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/leo/Documents/django-tutorial/mysite/polls/models.py", line 14
+    return now - datetime.timedelta(days=1) <= self.pub_date <= now
+                                                                  ^
+IndentationError: unindent does not match any outer indentation level
